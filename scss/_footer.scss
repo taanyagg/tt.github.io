@@ -1,0 +1,21 @@
+.footer {
+	padding-bottom: 30px;
+	margin: 0 auto;
+	margin-top: 200px;
+	width: 80%;
+	&__first {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__second {
+		margin-top: 20px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.divider {
+		width: 100%;
+		margin-top: 20px;
+		border: 1px solid rgb(233, 236, 239);
+	}
+}

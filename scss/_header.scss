@@ -1,0 +1,26 @@
+.header {
+	padding-top: 30px;
+	margin: 0 auto;
+	width: 80%;
+	&__list {
+		display: flex;
+		align-items: center;
+		list-style-type: none;
+		gap: 40px;
+		font-size: 20px;
+		:first-child {
+			font-weight: 700;
+			font-size: 30px;
+		}
+	}
+	&__navbar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__btns {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+}

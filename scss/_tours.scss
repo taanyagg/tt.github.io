@@ -1,0 +1,101 @@
+.tours {
+	margin: 0 auto;
+	width: 80%;
+	margin-top: 200px;
+	&__title {
+		font-size: 48px;
+	}
+	&__subtitle {
+		margin-top: 20px;
+		font-size: 24px;
+		color: rgb(84, 97, 121);
+		font-weight: 400;
+	}
+	&__cards {
+		margin: 0 auto;
+		margin-top: 20px;
+		column-gap: 32px;
+		row-gap: 110px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		place-content: center;
+	}
+	&__card {
+		padding: 30px;
+		border-radius: 20px;
+		box-shadow: 0px 2px 4px 0px rgba(14, 86, 124, 0.16);
+		background-color: #fff;
+		img {
+			display: block;
+			width: 100%;
+		}
+		.card {
+			&__header {
+				margin-top: 30px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			&__title {
+				font-size: 24px;
+			}
+			&__subtitle {
+				font-size: 16px;
+				color: rgb(153, 163, 173);
+				font-weight: 400;
+			}
+			&__like {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 48px;
+				height: 48px;
+				border: none;
+				border-radius: 100%;
+				background-color: rgb(251, 251, 251);
+				cursor: pointer;
+				svg {
+					transition: 0.2s all;
+				}
+				&:hover {
+					svg {
+						transform: scale(1.1);
+					}
+				}
+			}
+			&__body {
+				margin-top: 10px;
+				display: flex;
+				justify-content: space-between;
+				h4 {
+					color: rgb(84, 97, 121);
+					font-size: 14px;
+				}
+				.body__marks {
+					ul {
+						list-style-type: none;
+						display: flex;
+						gap: 2px;
+					}
+					h4 {
+						text-align: center;
+					}
+				}
+			}
+			&__footer {
+				margin-top: 40px;
+				font-size: 16px;
+				color: rgb(84, 97, 121);
+				.footer__days {
+					display: flex;
+					align-items: center;
+					gap: 5px;
+				}
+				.footer__canc {
+					display: flex;
+					gap: 5px;
+				}
+			}
+		}
+	}
+}
